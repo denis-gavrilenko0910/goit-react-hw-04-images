@@ -24,7 +24,6 @@ export function App() {
       toast('Please enter desirable image name for search');
       return;
     }
-    console.log(searchImg);
     setInputQuery(searchImg);
     setCurrentPage(1);
     setImages([]);
