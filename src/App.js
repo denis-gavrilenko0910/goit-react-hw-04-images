@@ -16,7 +16,6 @@ export function App() {
   const [tags, setTags] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  // const [error, setError] = useState(null);
   const [loadMore, setLoadMore] = useState(false);
 
   const handleSearchSubmit = searchImg => {
@@ -27,7 +26,6 @@ export function App() {
     setInputQuery(searchImg);
     setCurrentPage(1);
     setImages([]);
-    // setError(null);
   };
 
   useEffect(() => {
