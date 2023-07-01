@@ -6,6 +6,9 @@ const madalRoot = document.getElementById('modal_root');
 export const Modal = ({ onClose, children }) => {
   useEffect(() => {
     window.addEventListener('keydown', onEscape);
+    return () => {
+      window.removeEventListener('keydown', onEscape);
+    };
   });
 
   const onEscape = e => {
